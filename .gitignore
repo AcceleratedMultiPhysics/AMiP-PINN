@@ -1,0 +1,6 @@
+*test*
+*.pkl
+__pycache__/
+*.pt
+*losses.txt*
+outputs/
