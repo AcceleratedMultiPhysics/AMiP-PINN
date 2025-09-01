@@ -1,0 +1,18 @@
+Total training time: 18.103 mins.
+Total epochs       : 40000.0.
+Best Loss          : 0.000001
+NN Architecture    : DNN(
+  (network): Sequential(
+    (0): Linear(in_features=2, out_features=128, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=128, out_features=128, bias=True)
+    (3): Tanh()
+    (4): Linear(in_features=128, out_features=128, bias=True)
+    (5): Tanh()
+    (6): Linear(in_features=128, out_features=128, bias=True)
+    (7): Tanh()
+    (8): Linear(in_features=128, out_features=128, bias=True)
+    (9): Tanh()
+    (10): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
