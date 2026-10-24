@@ -1,0 +1,46 @@
+{
+ "N=15,mass": {
+  "n_modes": 15,
+  "n_test": 29,
+  "n_cubature": 38,
+  "n_stabilizing": 0,
+  "n_points": 38,
+  "n_viscous": 45,
+  "cond_test_mass": 202.97018853729864,
+  "offline_s": 0.1,
+  "online_s": 1.6
+ },
+ "N=15,test_mass": {
+  "n_modes": 15,
+  "n_test": 29,
+  "n_cubature": 88,
+  "n_stabilizing": 0,
+  "n_points": 88,
+  "n_viscous": 45,
+  "cond_test_mass": 1.0332617905636698,
+  "offline_s": 0.1,
+  "online_s": 3.1
+ },
+ "N=30,mass": {
+  "n_modes": 30,
+  "n_test": 59,
+  "n_cubature": 93,
+  "n_stabilizing": 0,
+  "n_points": 93,
+  "n_viscous": 103,
+  "cond_test_mass": 28.52745316464054,
+  "offline_s": 0.2,
+  "online_s": 3.4
+ },
+ "N=30,test_mass": {
+  "n_modes": 30,
+  "n_test": 59,
+  "n_cubature": 158,
+  "n_stabilizing": 0,
+  "n_points": 158,
+  "n_viscous": 103,
+  "cond_test_mass": 1.0188138752816749,
+  "offline_s": 0.4,
+  "online_s": 7.1
+ }
+}

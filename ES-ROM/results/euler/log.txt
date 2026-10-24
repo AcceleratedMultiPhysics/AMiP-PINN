@@ -1,0 +1,39 @@
+K=2500, dt=2.500e-04, 3001 stored steps to T=0.75, 301 SVD snapshots
+max CFL (|u|+c) dt/dx = 0.501
+
+N=25 (tol=4.20e-03) Galerkin ROM: 15.3s
+  HR target=mass: {'n_modes': 25, 'n_test': 49, 'n_cubature': 59, 'n_stabilizing': 1, 'n_points': 60, 'n_viscous': 66, 'cond_test_mass': 348.98880012218086, 'offline_s': 6.6, 'online_s': 11.0}
+  HR target=test_mass: {'n_modes': 25, 'n_test': 49, 'n_cubature': 121, 'n_stabilizing': 0, 'n_points': 121, 'n_viscous': 66, 'cond_test_mass': 1.0537739499123515, 'offline_s': 6.8, 'online_s': 24.2}
+  no HR (12)               rel. L2 error: T=0.25 6.426e-03, T=0.75 1.166e-02
+  HR, target mass          rel. L2 error: T=0.25 6.463e-03, T=0.75 1.160e-02
+  HR, target test_mass     rel. L2 error: T=0.25 6.425e-03, T=0.75 1.163e-02
+
+N=75 (tol=4.46e-04) Galerkin ROM: 24.3s
+  HR target=mass: {'n_modes': 75, 'n_test': 149, 'n_cubature': 191, 'n_stabilizing': 7, 'n_points': 198, 'n_viscous': 211, 'cond_test_mass': 2721.54965440497, 'offline_s': 7.9, 'online_s': 57.0}
+  HR target=test_mass: {'n_modes': 75, 'n_test': 149, 'n_cubature': 484, 'n_stabilizing': 0, 'n_points': 484, 'n_viscous': 211, 'cond_test_mass': 1.004642054494782, 'offline_s': 22.2, 'online_s': 410.3}
+  no HR (12)               rel. L2 error: T=0.25 6.204e-04, T=0.75 1.194e-03
+  HR, target mass          rel. L2 error: T=0.25 6.212e-04, T=0.75 1.178e-03
+  HR, target test_mass     rel. L2 error: T=0.25 6.208e-04, T=0.75 1.180e-03
+
+N=125 (tol=5.76e-05) Galerkin ROM: 31.9s
+  HR target=mass: {'n_modes': 125, 'n_test': 249, 'n_cubature': 354, 'n_stabilizing': 0, 'n_points': 354, 'n_viscous': 389, 'cond_test_mass': 226.3537186049868, 'offline_s': 13.3, 'online_s': 211.5}
+  HR target=test_mass: {'n_modes': 125, 'n_test': 249, 'n_cubature': 669, 'n_stabilizing': 0, 'n_points': 669, 'n_viscous': 389, 'cond_test_mass': 1.0005100661298854, 'offline_s': 33.7, 'online_s': 772.1}
+  no HR (12)               rel. L2 error: T=0.25 1.172e-04, T=0.75 2.718e-04
+  HR, target mass          rel. L2 error: T=0.25 1.165e-04, T=0.75 2.732e-04
+  HR, target test_mass     rel. L2 error: T=0.25 1.173e-04, T=0.75 2.717e-04
+
+Table 1 (paper target):  N | cubature | stabilizing | viscous
+     25 |       59 |           1 |      66
+     75 |      191 |           7 |     211
+    125 |      354 |           0 |     389
+eps=0, N=25: max |convective entropy residual| = 2.23e-14
+eps=0, N=75: max |convective entropy residual| = 4.64e-13
+eps=0, N=125: max |convective entropy residual| = 2.64e-14
+N=25, viscosity (20): min v_N^T d = 8.393e-01
+N=25, viscosity (22): min v_N^T d = 8.393e-01
+N=25, viscosity (23): min v_N^T d = 8.354e-01
+N=75, viscosity (20): min v_N^T d = 8.331e-01
+N=75, viscosity (22): min v_N^T d = 8.331e-01
+N=75, viscosity (23): min v_N^T d = 8.331e-01
+
+Figures written to /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/results/euler

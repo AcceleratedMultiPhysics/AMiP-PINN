@@ -1,0 +1,33 @@
+FOM: K=1000, dt=0.0005, 401 snapshots, S(0)=0.500000, S(T)=0.182148
+
+N=4: tol=5.13e-03, ||V^T Q V||/||QV|| = 2.18e-16
+  HR, Vt=[1,V]                          : 8 pts (0 stab), 6 visc pts, dim Vt=4, cond(Mt)=1.0e+00
+  HR, Vt=[1,V,QV], target VoV (paper)   : 9 pts (1 stab), 6 visc pts, dim Vt=7, cond(Mt)=1.8e+01
+  HR, Vt=[1,V,QV], target VtoVt         : 14 pts (0 stab), 6 visc pts, dim Vt=7, cond(Mt)=1.0e+00
+  Galerkin (Thm 2, no HR)                rel. L2 error at T: 5.420e-02
+  HR, Vt=[1,V]                           rel. L2 error at T: 1.034e+00
+  HR, Vt=[1,V,QV], target VoV (paper)    rel. L2 error at T: 1.291e-01
+  HR, Vt=[1,V,QV], target VtoVt          rel. L2 error at T: 5.412e-02
+
+N=8: tol=1.53e-04, ||V^T Q V||/||QV|| = 2.71e-14
+  HR, Vt=[1,V]                          : 23 pts (0 stab), 17 visc pts, dim Vt=8, cond(Mt)=1.0e+00
+  HR, Vt=[1,V,QV], target VoV (paper)   : 23 pts (0 stab), 17 visc pts, dim Vt=15, cond(Mt)=1.1e+02
+  HR, Vt=[1,V,QV], target VtoVt         : 35 pts (0 stab), 17 visc pts, dim Vt=15, cond(Mt)=1.0e+00
+  Galerkin (Thm 2, no HR)                rel. L2 error at T: 1.787e-03
+  HR, Vt=[1,V]                           rel. L2 error at T: 1.034e+00
+  HR, Vt=[1,V,QV], target VoV (paper)    rel. L2 error at T: 2.325e-01
+  HR, Vt=[1,V,QV], target VtoVt          rel. L2 error at T: 1.786e-03
+
+N=12: tol=4.56e-06, ||V^T Q V||/||QV|| = 7.56e-13
+  HR, Vt=[1,V]                          : 36 pts (0 stab), 26 visc pts, dim Vt=12, cond(Mt)=1.0e+00
+  HR, Vt=[1,V,QV], target VoV (paper)   : 36 pts (0 stab), 26 visc pts, dim Vt=23, cond(Mt)=9.6e+01
+  HR, Vt=[1,V,QV], target VtoVt         : 54 pts (0 stab), 26 visc pts, dim Vt=23, cond(Mt)=1.0e+00
+  Galerkin (Thm 2, no HR)                rel. L2 error at T: 6.947e-05
+  HR, Vt=[1,V]                           rel. L2 error at T: 1.034e+00
+  HR, Vt=[1,V,QV], target VoV (paper)    rel. L2 error at T: 7.768e-03
+  HR, Vt=[1,V,QV], target VtoVt          rel. L2 error at T: 6.947e-05
+
+Entropy (N=8, eps=0): max |v_N^T conv| = 2.07e-12, sampled entropy drift = 5.39e-08 (time integration error)
+Entropy dissipation (eps=0.002): min v_N^T d = 1.039e+01 (must be >= 0)
+
+Figures written to /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/results/burgers

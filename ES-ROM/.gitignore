@@ -1,0 +1,3 @@
+results/**/fom.npz
+__pycache__/
+*.pyc
