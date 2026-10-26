@@ -1,0 +1,21 @@
+advection: target trimming = energy, ROM time step = own
+
+p=0, 1024 elements: FOM 800 steps in 0.1s
+  N=15: ROM 1.28e-03 | HR-ROM 1.28e-03 with 29 nodes (paper 1.28e-03 / 31), cond(Mt)=3.6e+05, steps 1344/1344, 0s/0s
+  N=20: ROM 1.52e-05 | HR-ROM 1.52e-05 with 42 nodes (paper 1.52e-05 / 44), cond(Mt)=9.7e+04, steps 1728/1728, 1s/0s
+  N=25: ROM 9.13e-08 | HR-ROM 9.16e-08 with 56 nodes (paper 9.12e-08 / 58), cond(Mt)=2.0e+02, steps 2112/2112, 1s/1s
+
+p=3, 256 elements: FOM 1600 steps in 0.3s
+  N=15: ROM 1.29e-03 | HR-ROM 1.29e-03 with 30 nodes (paper 1.29e-03 / 32), cond(Mt)=1.3e+05, steps 1344/1344, 1s/0s
+  N=20: ROM 1.55e-05 | HR-ROM 1.56e-05 with 72 nodes (paper 1.55e-05 / 81), cond(Mt)=1.2e+02, steps 1728/1728, 1s/1s
+  N=25: ROM 5.53e-07 | HR-ROM 5.66e-07 with 147 nodes (paper 5.55e-07 / 164), cond(Mt)=6.1e+00, steps 2112/2112, 1s/2s
+
+p=7, 128 elements: FOM 3200 steps in 1.1s
+  N=15: ROM 1.29e-03 | HR-ROM 1.29e-03 with 30 nodes (paper 1.29e-03 / 31), cond(Mt)=9.3e+04, steps 1344/1344, 1s/0s
+  N=20: ROM 1.55e-05 | HR-ROM 1.55e-05 with 42 nodes (paper 1.55e-05 / 68), cond(Mt)=6.2e+04, steps 1728/1728, 2s/0s
+  N=25: ROM 9.41e-08 | HR-ROM 1.16e-07 with 56 nodes (paper 1.02e-07 / 155), cond(Mt)=6.0e+02, steps 2112/2112, 2s/2s
+
+advection: HR-ROM error / nodes [paper]
+N= 15 | p=0: 1.28e-03/ 29 [1.28e-03/ 31] | p=3: 1.29e-03/ 30 [1.29e-03/ 32] | p=7: 1.29e-03/ 30 [1.29e-03/ 31]
+N= 20 | p=0: 1.52e-05/ 42 [1.52e-05/ 44] | p=3: 1.56e-05/ 72 [1.55e-05/ 81] | p=7: 1.55e-05/ 42 [1.55e-05/ 68]
+N= 25 | p=0: 9.16e-08/ 56 [9.12e-08/ 58] | p=3: 5.66e-07/147 [5.55e-07/164] | p=7: 1.16e-07/ 56 [1.02e-07/155]

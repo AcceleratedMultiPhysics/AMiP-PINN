@@ -1,0 +1,21 @@
+euler: target trimming = abs, ROM time step = own
+
+p=0, 1024 elements: FOM 1200 steps in 2.8s
+  N=20: ROM 2.82e-05 | HR-ROM 2.82e-05 with 51 nodes (paper 1.00e-04 / 53), cond(Mt)=9.9e+01, steps 800/800, 7s/5s
+  N=30: ROM 1.30e-06 | HR-ROM 1.30e-06 with 78 nodes (paper 4.98e-06 / 93), cond(Mt)=7.7e+01, steps 640/640, 7s/6s
+  N=40: ROM 2.65e-08 | HR-ROM 2.69e-08 with 108 nodes (paper 1.09e-07 / 285), cond(Mt)=7.9e+01, steps 896/896, 8s/11s
+
+p=3, 256 elements: FOM 2800 steps in 9.0s
+  N=20: ROM 2.83e-05 | HR-ROM 2.83e-05 with 75 nodes (paper 1.00e-04 / 77), cond(Mt)=5.9e+01, steps 800/800, 6s/4s
+  N=30: ROM 1.31e-06 | HR-ROM 1.28e-06 with 161 nodes (paper 5.77e-06 / 174), cond(Mt)=6.4e+00, steps 640/640, 6s/14s
+  N=40: ROM 2.89e-08 | HR-ROM 2.89e-08 with 300 nodes (paper 1.14e-07 / 415), cond(Mt)=1.4e+00, steps 896/896, 7s/44s
+
+p=7, 128 elements: FOM 6000 steps in 23.8s
+  N=20: ROM 2.83e-05 | HR-ROM 2.83e-05 with 51 nodes (paper 1.01e-04 / 53), cond(Mt)=1.1e+02, steps 800/800, 11s/2s
+  N=30: ROM 1.31e-06 | HR-ROM 1.31e-06 with 78 nodes (paper 5.10e-06 / 80), cond(Mt)=5.0e+02, steps 640/640, 6s/4s
+  N=40: ROM 2.82e-08 | HR-ROM 2.83e-08 with 151 nodes (paper 1.10e-07 / 281), cond(Mt)=3.9e+01, steps 896/896, 12s/14s
+
+euler: HR-ROM error / nodes [paper]
+N= 20 | p=0: 2.82e-05/ 51 [1.00e-04/ 53] | p=3: 2.83e-05/ 75 [1.00e-04/ 77] | p=7: 2.83e-05/ 51 [1.01e-04/ 53]
+N= 30 | p=0: 1.30e-06/ 78 [4.98e-06/ 93] | p=3: 1.28e-06/161 [5.77e-06/174] | p=7: 1.31e-06/ 78 [5.10e-06/ 80]
+N= 40 | p=0: 2.69e-08/108 [1.09e-07/285] | p=3: 2.89e-08/300 [1.14e-07/415] | p=7: 2.83e-08/151 [1.10e-07/281]

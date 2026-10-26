@@ -79,5 +79,30 @@ K=2500, ε=2e-4, dt=2.5e-4, 301 snapshots of `u` and `v(u)` on [0, 0.75], viscos
    - The defaults `eig_tol=1e-3, alpha_Z=1e-4` were tuned at N=75. With α_Z=1e-2, 87 points get added and the error is 8e-2. With the new defaults, 7 points get added and the error is 1.2e-3.
 3. **Snapshot window.** The paper says snapshots to T=0.7 but plots at T=0.75. Past 0.7 the ROM is extrapolating and the error jumps (`results/euler_quick_tsnap0.7`). The default is now 0.75 (`--t-snap 0.7` to compare).
 
-## Next
-Step 2 of the plan: the DG version, Qu, Narayan & Chan, JCP 557 (2026) 114830, code at `github.com/rayqu1126/ES_DG_ROM`. In DG the mass matrix is no longer `dx I`, and the test-basis enrichment becomes `M⁻¹QᵀV`.
+## Step 2: DG version (Qu, Narayan & Chan 2026), 1D
+
+A separate package, `esdg/`, implements the entropy stable DG ROM of Qu, Narayan & Chan, JCP 557 (2026) 114830, for 1D periodic problems (Secs. 3.1–3.5 and 5; boundary conditions left out). It does not import or modify the FV package `esrom/`.
+
+**[docs/dg_notes.md](docs/dg_notes.md)** has the full write-up:
+- what changes from FV to DG;
+- why the test basis must be `M⁻¹QᵀV` (Theorem 4);
+- a paper → code map and the reproduced tables;
+- experiments with the test basis and hyper-reduction;
+- ideas for combining with our closures.
+
+| file | contents |
+|---|---|
+| `esdg/physics.py` | copy of the FV physics, plus linear advection |
+| `esdg/fom.py` | GLL/SBP operators, global periodic `Q_Ω`, nodal ES-DG FOM, BR-1 viscosity, RK4, time-step tools |
+| `esdg/hyperreduction.py` | V∗V target, greedy cubature, stabilization (authors' "stacked" and our "union"), Carathéodory pruning |
+| `esdg/rom.py` | M-weighted POD, test basis, Galerkin ROM (Thm 3), hyper-reduced ROM, offline builder, ROM time step |
+| `tests/test_dg_invariants.py` | SBP, skew-symmetry, entropy residuals, Theorem 4, Carathéodory |
+| `scripts/dg_compare_1d.py` | Sec. 6.2: FV (p=0) vs DG (p=3, 7) on advection, Burgers, Euler (Tables 1–3) |
+| `scripts/dg_play_1d.py` | experiments: test basis, target, stabilization, Carathéodory, error vs nodes |
+
+```bash
+python tests/test_dg_invariants.py
+python scripts/dg_compare_1d.py advection     # also: burgers, euler --trim abs
+python scripts/dg_play_1d.py
+```
+Results go to `results/dg/`.

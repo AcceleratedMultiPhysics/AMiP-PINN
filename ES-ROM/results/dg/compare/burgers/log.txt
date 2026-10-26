@@ -1,0 +1,21 @@
+burgers: target trimming = energy, ROM time step = own
+
+p=0, 1024 elements: FOM 2800 steps in 0.5s
+  N=30: ROM 4.43e-04 | HR-ROM 4.46e-04 with 68 nodes (paper 1.38e-03 / 68), cond(Mt)=3.8e+04, steps 1124/1124, 1s/0s
+  N=40: ROM 3.44e-05 | HR-ROM 7.59e-05 with 87 nodes (paper 3.35e-05 / 94), cond(Mt)=6.8e+05, steps 952/952, 0s/0s
+  N=50: ROM 2.54e-06 | HR-ROM 4.88e-05 with 110 nodes (paper 2.43e-05 / 128), cond(Mt)=1.3e+06, steps 1414/1414, 1s/1s
+
+p=3, 256 elements: FOM 11600 steps in 2.7s
+  N=30: ROM 4.23e-04 | HR-ROM 3.73e-03 with 92 nodes (paper 4.35e-04 / 125), cond(Mt)=4.3e+02, steps 1164/1168, 1s/1s
+  N=40: ROM 3.14e-05 | HR-ROM 1.13e-04 with 170 nodes (paper 6.93e-05 / 214), cond(Mt)=4.4e+01, steps 1024/1024, 1s/1s
+  N=50: ROM 2.19e-06 | HR-ROM 6.28e-05 with 233 nodes (paper 8.64e-06 / 283), cond(Mt)=9.4e+00, steps 1598/1598, 1s/4s
+
+p=7, 128 elements: FOM 42800 steps in 18.2s
+  N=30: ROM 4.23e-04 | HR-ROM 2.04e-02 with 63 nodes (paper 6.18e-04 / 69), cond(Mt)=3.3e+07, steps 1164/1164, 1s/0s
+  N=40: ROM 3.13e-05 | HR-ROM 1.78e-04 with 109 nodes (paper 5.16e-05 / 145), cond(Mt)=1.5e+03, steps 1026/1026, 1s/1s
+  N=50: ROM 2.18e-06 | HR-ROM 8.48e-06 with 202 nodes (paper 1.81e-05 / 271), cond(Mt)=4.4e+01, steps 1606/1606, 1s/3s
+
+burgers: HR-ROM error / nodes [paper]
+N= 30 | p=0: 4.46e-04/ 68 [1.38e-03/ 68] | p=3: 3.73e-03/ 92 [4.35e-04/125] | p=7: 2.04e-02/ 63 [6.18e-04/ 69]
+N= 40 | p=0: 7.59e-05/ 87 [3.35e-05/ 94] | p=3: 1.13e-04/170 [6.93e-05/214] | p=7: 1.78e-04/109 [5.16e-05/145]
+N= 50 | p=0: 4.88e-05/110 [2.43e-05/128] | p=3: 6.28e-05/233 [8.64e-06/283] | p=7: 8.48e-06/202 [1.81e-05/271]
