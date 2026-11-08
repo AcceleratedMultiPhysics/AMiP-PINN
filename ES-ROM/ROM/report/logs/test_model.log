@@ -1,0 +1,20 @@
+PASS  test_structured_random_weights_euler             0.46 s   
+PASS  test_structured_low_rank                         0.28 s   
+PASS  test_output_sizes                                0.45 s   
+PASS  test_precomputed_vN_matches                      0.45 s   
+PASS  test_batch_consistency                           0.40 s   
+structured network: 2105 weights, n=6, data samples=21, teacher samples=41
+PASS  test_rollout_entropy_nonincreasing_burgers       3.60 s   Fully discrete: S may only rise by RK time error, which is tiny at small dt.
+structured network: 9089 weights, n=18, data samples=21, teacher samples=41
+Iter 1 (pretrain), Loss: 1.143e+00, Data: 1.244e+00, Teacher: 1.143e+00, Entropy: 2.404e+02, lr: 1.0e-03, t/iter: 0.0e+00
+Iter 2 (pretrain), Loss: 1.040e+00, Data: 1.140e+00, Teacher: 1.040e+00, Entropy: 2.066e+02, lr: 1.0e-03, t/iter: 1.6e+00
+Iter 3, Loss: 2.064e+01, Data: 1.047e+00, Teacher: 9.491e-01, Entropy: 1.865e+02, lr: 1.0e-03, t/iter: 2.5e-03
+Iter 4, Loss: 1.500e+01, Data: 1.003e+00, Teacher: 9.051e-01, Entropy: 1.310e+02, lr: 1.0e-03, t/iter: 2.3e-03
+unconstrained network: 2258 weights, n=18, data samples=21, teacher samples=41
+Iter 1 (pretrain), Loss: 1.052e+00, Data: 1.132e+00, Teacher: 1.052e+00, Entropy: 9.494e+05, lr: 1.0e-03, t/iter: 0.0e+00
+Iter 2 (pretrain), Loss: 1.014e+00, Data: 1.093e+00, Teacher: 1.014e+00, Entropy: 8.680e+05, lr: 1.0e-03, t/iter: 3.0e-03
+Iter 3, Loss: 7.917e+04, Data: 1.055e+00, Teacher: 9.765e-01, Entropy: 7.917e+05, lr: 1.0e-03, t/iter: 1.8e-03
+Iter 4, Loss: 6.112e+04, Data: 1.051e+00, Teacher: 9.735e-01, Entropy: 6.112e+05, lr: 1.0e-03, t/iter: 2.0e-03
+PASS  test_trainer_smoke                               2.20 s   A few epochs for both networks: finite losses, structure intact after updates.
+
+7/7 passed

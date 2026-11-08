@@ -1,0 +1,8 @@
+PASS  test_conservation_of_totals                      0.01 s   Rows of 2(Q o F)1 and K u telescope: sum over cells is zero.
+PASS  test_entropy_conservative_convection             0.00 s   
+PASS  test_viscous_dissipation_nonnegative             0.00 s   
+PASS  test_batched_rhs_matches_loop                    0.00 s   
+PASS  test_matches_numpy_fv_code                       0.10 s   Cross-check against the committed FV package FOM/esrom (skipped if absent).
+PASS  test_entropy_drift_converges_with_dt             0.81 s   With eps = 0 the semi-discrete entropy is conserved; RK4 drift must shrink fast with dt.
+
+6/6 passed

@@ -1,0 +1,57 @@
+{
+  "problem": "burgers",
+  "K": 1000,
+  "eps": 0.002,
+  "r": 6,
+  "n": 6,
+  "T_train": 1.5,
+  "T_final": 1.5,
+  "projection_error": {
+    "T_train": 0.00231272019054974,
+    "T_final": 0.00231272019054974
+  },
+  "checks": {
+    "closure": {
+      "max_closure_dSdt": -0.00015895992679936348,
+      "min_nu": 2.8136077214991455e-62,
+      "max_nu_over_eps": 24.242566715218437,
+      "mean_nu_over_eps": 0.3131947988161022
+    },
+    "teacher_max_entropy_residual": 7.216449660063518e-16
+  },
+  "roms": {
+    "ES-ROM (teacher)": {
+      "err_T_train": 0.01317333448721258,
+      "err_end": 0.01317333448721258,
+      "err_max": 0.013344071287527388,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.2111492364574871e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.4886635144551597
+    },
+    "POD-Galerkin": {
+      "err_T_train": 0.013173334487213131,
+      "err_end": 0.013173334487213131,
+      "err_max": 0.013344071287527412,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.202267452260486e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.1819794178009033
+    },
+    "NN closure": {
+      "err_T_train": 0.008401808469982378,
+      "err_end": 0.008401808469982378,
+      "err_max": 0.010984962118748642,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.1256620635613501e-16,
+      "all_admissible": true,
+      "ms_per_step": 3.9451060295104976
+    }
+  }
+}

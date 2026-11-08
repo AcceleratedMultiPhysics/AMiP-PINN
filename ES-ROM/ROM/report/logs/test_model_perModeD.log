@@ -1,0 +1,9 @@
+PASS  test_structured_random_weights_euler             0.45 s   
+PASS  test_structured_low_rank                         0.44 s   
+PASS  test_output_sizes                                0.44 s   
+PASS  test_precomputed_vN_matches                      0.44 s   
+PASS  test_batch_consistency                           0.44 s   
+PASS  test_rollout_entropy_nonincreasing_burgers       4.08 s   Fully discrete: S may only rise by RK time error, which is tiny at small dt.
+PASS  test_trainer_smoke                               2.58 s   A few epochs for both networks: finite losses, structure intact after updates.
+
+7/7 passed

@@ -1,0 +1,19 @@
+Problem            : burgers, K=1000, eps=0.002, r=16, n=16
+Model              : unconstrained
+Total training time: 16.590 mins.
+Total epochs       :  30000.
+Best Loss          : 6.083328e-06
+Train settings     : {'nepochs': 30000, 'n_pretrain': 5000, 'lr': 0.001, 'step_size': 5000, 'gamma': 0.9, 'w_data': 1.0, 'w_teacher': 1.0, 'w_entropy': 0.1, 'entropy_target': 'fom', 'n_teacher': 2000, 'teacher_noise': 0.1, 'print_step': 500, 'compile': False}
+NN Architecture    : UnconstrainedNet(
+  (mlp): Sequential(
+    (0): Linear(in_features=16, out_features=256, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=256, out_features=256, bias=True)
+    (3): Tanh()
+    (4): Linear(in_features=256, out_features=256, bias=True)
+    (5): Tanh()
+    (6): Linear(in_features=256, out_features=256, bias=True)
+    (7): Tanh()
+    (8): Linear(in_features=256, out_features=16, bias=True)
+  )
+)

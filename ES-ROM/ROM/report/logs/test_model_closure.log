@@ -1,0 +1,13 @@
+PASS  test_structured_random_weights_euler             0.45 s   
+PASS  test_structured_low_rank                         0.46 s   
+PASS  test_output_sizes                                0.45 s   
+PASS  test_precomputed_vN_matches                      0.45 s   
+PASS  test_batch_consistency                           0.45 s   
+PASS  test_rollout_entropy_nonincreasing_burgers       3.68 s   Fully discrete: S may only rise by RK time error, which is tiny at small dt.
+PASS  test_trainer_smoke                               2.55 s   A few epochs for both networks: finite losses, structure intact after updates.
+PASS  test_closure_entropy_and_conservation            0.45 s   Eddy-viscosity closure: nu >= 0, closure dS/dt <= 0, totals conserved (Euler).
+PASS  test_closure_reduces_to_esrom_and_keeps_uniform_states    0.45 s   
+PASS  test_closure_rollout_entropy_nonincreasing_burgers    3.71 s   
+PASS  test_closure_trainer_smoke                       0.03 s   A few epochs: finite losses, no teacher samples, nu >= 0 after updates.
+
+11/11 passed

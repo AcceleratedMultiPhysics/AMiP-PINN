@@ -1,0 +1,10 @@
+no structured weights at /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4_repro/structured/weights.pt, skipping
+no unconstrained weights at /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4_repro/unconstrained/weights.pt, skipping
+no memory weights at /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4_repro/memory/weights.pt, skipping
+ES-ROM (teacher)     err(T_train)=1.301e-01  err(end)=1.301e-01  t_end=1.500  1.455 ms/step
+POD-Galerkin         err(T_train)=1.301e-01  err(end)=1.301e-01  t_end=1.500  1.179 ms/step
+NN closure           err(T_train)=9.309e-02  err(end)=9.309e-02  t_end=1.500  4.233 ms/step
+NN backscatter       err(T_train)=1.524e-01  err(end)=1.524e-01  t_end=1.500  4.111 ms/step
+closure: max model dS/dt = -2.3e-02 (<= 0), max closure dS/dt = -1.7e-09, min (eps+nu)/eps = 1.000, nu/eps mean 5.43, max 119.07, nu < 0 on 0.0% of edges
+backscatter: max model dS/dt = -2.5e-04 (<= 0), max closure dS/dt = 7.6e-02, min (eps+nu)/eps = 0.000, nu/eps mean 1.39, max 12.93, nu < 0 on 47.9% of edges
+figures and metrics.json written to /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4_repro/post/

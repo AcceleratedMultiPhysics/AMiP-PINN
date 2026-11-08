@@ -1,0 +1,78 @@
+{
+  "problem": "burgers",
+  "K": 1000,
+  "eps": 0.002,
+  "r": 4,
+  "n": 4,
+  "T_train": 1.5,
+  "T_final": 1.5,
+  "projection_error": {
+    "T_train": 0.02001026653789666,
+    "T_final": 0.02001026653789666
+  },
+  "checks": {
+    "closure": {
+      "max_model_dSdt": -0.023325682718343208,
+      "max_closure_dSdt": -1.6601194110811552e-09,
+      "min_total_visc_over_eps": 1.0,
+      "max_nu_over_eps": 119.06708822055471,
+      "mean_nu_over_eps": 5.434865962371527,
+      "frac_backscatter": 0.0
+    },
+    "backscatter": {
+      "max_model_dSdt": -0.00024919976056030183,
+      "max_closure_dSdt": 0.0761198589832577,
+      "min_total_visc_over_eps": 3.588018770983581e-12,
+      "max_nu_over_eps": 12.925384476292239,
+      "mean_nu_over_eps": 1.393405664687181,
+      "frac_backscatter": 0.47932113144758737
+    },
+    "teacher_max_entropy_residual": 3.157196726277789e-16
+  },
+  "roms": {
+    "ES-ROM (teacher)": {
+      "err_T_train": 0.1301463739700415,
+      "err_end": 0.1301463739700415,
+      "err_max": 0.1301463739700415,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.510042091368291e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.455247402191162
+    },
+    "POD-Galerkin": {
+      "err_T_train": 0.1301463739700417,
+      "err_end": 0.1301463739700417,
+      "err_max": 0.1301463739700417,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.8730850204207172e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.1793869336446128
+    },
+    "NN closure": {
+      "err_T_train": 0.09308874670504293,
+      "err_end": 0.09308874670504293,
+      "err_max": 0.09308874670504293,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.524474990688418e-16,
+      "all_admissible": true,
+      "ms_per_step": 4.233213901519775
+    },
+    "NN backscatter": {
+      "err_T_train": 0.1523767173726624,
+      "err_end": 0.1523767173726624,
+      "err_max": 0.1523767173726624,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.4301060335952797e-16,
+      "all_admissible": true,
+      "ms_per_step": 4.111401637395224
+    }
+  }
+}

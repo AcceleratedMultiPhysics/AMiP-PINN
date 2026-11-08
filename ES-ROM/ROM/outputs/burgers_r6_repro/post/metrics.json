@@ -1,0 +1,78 @@
+{
+  "problem": "burgers",
+  "K": 1000,
+  "eps": 0.002,
+  "r": 6,
+  "n": 6,
+  "T_train": 1.5,
+  "T_final": 1.5,
+  "projection_error": {
+    "T_train": 0.00231272019054974,
+    "T_final": 0.00231272019054974
+  },
+  "checks": {
+    "closure": {
+      "max_model_dSdt": -0.02001487933927214,
+      "max_closure_dSdt": -0.00015895992679936348,
+      "min_total_visc_over_eps": 1.0,
+      "max_nu_over_eps": 24.242566715218437,
+      "mean_nu_over_eps": 0.3131947988161022,
+      "frac_backscatter": 0.0
+    },
+    "backscatter": {
+      "max_model_dSdt": -0.014989477972113406,
+      "max_closure_dSdt": 0.009582002295300977,
+      "min_total_visc_over_eps": 3.0628371533447663e-06,
+      "max_nu_over_eps": 12.120482204722126,
+      "mean_nu_over_eps": 0.5620423106505685,
+      "frac_backscatter": 0.5357820299500832
+    },
+    "teacher_max_entropy_residual": 7.216449660063518e-16
+  },
+  "roms": {
+    "ES-ROM (teacher)": {
+      "err_T_train": 0.01317333448721258,
+      "err_end": 0.01317333448721258,
+      "err_max": 0.013344071287527388,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.2111492364574871e-16,
+      "all_admissible": true,
+      "ms_per_step": 0.6221371491750081
+    },
+    "POD-Galerkin": {
+      "err_T_train": 0.013173334487213131,
+      "err_end": 0.013173334487213131,
+      "err_max": 0.013344071287527412,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.202267452260486e-16,
+      "all_admissible": true,
+      "ms_per_step": 0.4394841194152832
+    },
+    "NN closure": {
+      "err_T_train": 0.008401808469982378,
+      "err_end": 0.008401808469982378,
+      "err_max": 0.010984962118748642,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.1256620635613501e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.5495317776997886
+    },
+    "NN backscatter": {
+      "err_T_train": 0.012025082787718876,
+      "err_end": 0.012025082787718876,
+      "err_max": 0.012025082787718876,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.2400150350977412e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.4428269863128662
+    }
+  }
+}

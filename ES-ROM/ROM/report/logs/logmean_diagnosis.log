@@ -1,0 +1,2 @@
+naive formula used as test reference  : max rel. error vs 50-digit reference  1.20e-09  (|b/a-1|~1e-1 group 1.19e-13, ~1e-6 group 1.20e-09)
+logmean in utils/physics.py           : max rel. error vs 50-digit reference  3.70e-16  (|b/a-1|~1e-1 group 3.70e-16, ~1e-6 group 2.38e-16)

@@ -1,0 +1,70 @@
+----------------------------------------
+ES neural ROM  problem: burgers  model: structured  K: 1000  eps: 0.002  device: cuda
+----------------------------------------
+Basis: r=16 per variable, n=16, sigma_r/sigma_1=3.20e-07, ||V^T V - I||=7.8e-16
+Projection error: t=T_train 1.80e-07, t=T_final 3.78e-07
+Teacher: max |convective entropy residual| 6.1e-16, max dS/dt -2.0e-02 (should be <= 0)
+structured network: 259553 weights, n=16, data samples=301, teacher samples=2301
+Iter 1 (pretrain), Loss: 1.735e+01, Data: 1.724e+01, Teacher: 1.735e+01, Entropy: 1.000e+00, lr: 1.0e-03, t/iter: 0.0e+00
+Iter 500 (pretrain), Loss: 8.386e-03, Data: 6.069e-03, Teacher: 8.386e-03, Entropy: 1.143e-02, lr: 1.0e-03, t/iter: 5.0e-02
+Iter 1000 (pretrain), Loss: 1.549e-03, Data: 5.147e-04, Teacher: 1.549e-03, Entropy: 4.154e-03, lr: 1.0e-03, t/iter: 4.9e-02
+Iter 1500 (pretrain), Loss: 9.070e-03, Data: 8.158e-03, Teacher: 9.070e-03, Entropy: 1.977e-03, lr: 1.0e-03, t/iter: 5.0e-02
+Iter 2000 (pretrain), Loss: 1.664e-03, Data: 1.284e-03, Teacher: 1.664e-03, Entropy: 1.131e-03, lr: 1.0e-03, t/iter: 4.9e-02
+Iter 2500 (pretrain), Loss: 2.595e-03, Data: 2.256e-03, Teacher: 2.595e-03, Entropy: 6.171e-04, lr: 1.0e-03, t/iter: 5.0e-02
+Iter 3000 (pretrain), Loss: 3.287e-03, Data: 3.081e-03, Teacher: 3.287e-03, Entropy: 4.871e-04, lr: 1.0e-03, t/iter: 4.9e-02
+Iter 3500 (pretrain), Loss: 2.719e-03, Data: 2.655e-03, Teacher: 2.719e-03, Entropy: 2.830e-04, lr: 1.0e-03, t/iter: 5.0e-02
+Iter 4000 (pretrain), Loss: 1.834e-03, Data: 1.769e-03, Teacher: 1.834e-03, Entropy: 4.696e-05, lr: 1.0e-03, t/iter: 4.9e-02
+Iter 4500 (pretrain), Loss: 1.147e-03, Data: 1.104e-03, Teacher: 1.147e-03, Entropy: 2.220e-05, lr: 1.0e-03, t/iter: 5.0e-02
+Iter 5000 (pretrain), Loss: 1.624e-04, Data: 1.100e-04, Teacher: 1.624e-04, Entropy: 1.201e-05, lr: 1.0e-03, t/iter: 4.9e-02
+Iter 5500, Loss: 3.127e-04, Data: 4.818e-05, Teacher: 2.612e-04, Entropy: 3.332e-05, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 6000, Loss: 1.146e-04, Data: 7.227e-06, Teacher: 1.066e-04, Entropy: 7.873e-06, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 6500, Loss: 1.640e-04, Data: 3.637e-05, Teacher: 1.269e-04, Entropy: 7.324e-06, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 7000, Loss: 2.809e-04, Data: 1.036e-04, Teacher: 1.761e-04, Entropy: 1.233e-05, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 7500, Loss: 2.538e-04, Data: 9.823e-05, Teacher: 1.551e-04, Entropy: 4.788e-06, lr: 9.0e-04, t/iter: 5.3e-02
+Iter 8000, Loss: 1.596e-04, Data: 5.567e-05, Teacher: 1.036e-04, Entropy: 3.761e-06, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 8500, Loss: 5.076e-05, Data: 6.226e-06, Teacher: 4.435e-05, Entropy: 1.862e-06, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 9000, Loss: 2.628e-04, Data: 1.047e-04, Teacher: 1.567e-04, Entropy: 1.346e-05, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 9500, Loss: 2.360e-03, Data: 1.126e-03, Teacher: 1.230e-03, Entropy: 4.835e-05, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 10000, Loss: 8.443e-05, Data: 2.852e-05, Teacher: 5.565e-05, Entropy: 2.500e-06, lr: 9.0e-04, t/iter: 5.4e-02
+Iter 10500, Loss: 1.298e-03, Data: 6.118e-04, Teacher: 6.819e-04, Entropy: 3.810e-05, lr: 8.1e-04, t/iter: 5.4e-02
+Iter 11000, Loss: 1.701e-04, Data: 7.444e-05, Teacher: 9.528e-05, Entropy: 3.587e-06, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 11500, Loss: 2.336e-03, Data: 1.181e-03, Teacher: 1.148e-03, Entropy: 7.121e-05, lr: 8.1e-04, t/iter: 5.4e-02
+Iter 12000, Loss: 6.122e-04, Data: 2.925e-04, Teacher: 3.185e-04, Entropy: 1.238e-05, lr: 8.1e-04, t/iter: 5.4e-02
+Iter 12500, Loss: 7.786e-05, Data: 3.148e-05, Teacher: 4.622e-05, Entropy: 1.656e-06, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 13000, Loss: 3.664e-04, Data: 1.808e-04, Teacher: 1.847e-04, Entropy: 9.261e-06, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 13500, Loss: 9.288e-05, Data: 3.553e-05, Teacher: 5.706e-05, Entropy: 2.783e-06, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 14000, Loss: 3.049e-04, Data: 1.543e-04, Teacher: 1.491e-04, Entropy: 1.458e-05, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 14500, Loss: 1.185e-04, Data: 5.227e-05, Teacher: 6.614e-05, Entropy: 1.063e-06, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 15000, Loss: 1.578e-04, Data: 7.349e-05, Teacher: 8.379e-05, Entropy: 4.914e-06, lr: 8.1e-04, t/iter: 5.3e-02
+Iter 15500, Loss: 2.462e-04, Data: 1.121e-04, Teacher: 1.336e-04, Entropy: 4.171e-06, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 16000, Loss: 1.945e-04, Data: 9.310e-05, Teacher: 1.009e-04, Entropy: 5.599e-06, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 16500, Loss: 3.747e-04, Data: 1.861e-04, Teacher: 1.877e-04, Entropy: 8.536e-06, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 17000, Loss: 3.993e-04, Data: 1.967e-04, Teacher: 2.015e-04, Entropy: 1.010e-05, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 17500, Loss: 3.709e-05, Data: 1.215e-05, Teacher: 2.490e-05, Entropy: 4.629e-07, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 18000, Loss: 1.646e-04, Data: 7.426e-05, Teacher: 9.020e-05, Entropy: 1.885e-06, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 18500, Loss: 9.526e-04, Data: 1.088e-04, Teacher: 8.335e-04, Entropy: 1.031e-04, lr: 7.3e-04, t/iter: 5.4e-02
+Iter 19000, Loss: 2.123e-04, Data: 2.035e-05, Teacher: 1.892e-04, Entropy: 2.748e-05, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 19500, Loss: 1.220e-04, Data: 9.182e-06, Teacher: 1.116e-04, Entropy: 1.197e-05, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 20000, Loss: 8.559e-05, Data: 5.349e-06, Teacher: 7.950e-05, Entropy: 7.409e-06, lr: 7.3e-04, t/iter: 5.3e-02
+Iter 20500, Loss: 6.582e-05, Data: 3.604e-06, Teacher: 6.173e-05, Entropy: 4.890e-06, lr: 6.6e-04, t/iter: 5.4e-02
+Iter 21000, Loss: 6.129e-05, Data: 4.000e-06, Teacher: 5.568e-05, Entropy: 1.612e-05, lr: 6.6e-04, t/iter: 5.3e-02
+Iter 21500, Loss: 4.908e-05, Data: 2.804e-06, Teacher: 4.602e-05, Entropy: 2.596e-06, lr: 6.6e-04, t/iter: 5.3e-02
+Iter 22000, Loss: 3.788e-05, Data: 1.800e-06, Teacher: 3.564e-05, Entropy: 4.308e-06, lr: 6.6e-04, t/iter: 5.3e-02
+Iter 22500, Loss: 2.937e-05, Data: 1.212e-06, Teacher: 2.801e-05, Entropy: 1.412e-06, lr: 6.6e-04, t/iter: 5.3e-02
+Iter 23000, Loss: 8.710e-05, Data: 3.177e-05, Teacher: 5.503e-05, Entropy: 3.033e-06, lr: 6.6e-04, t/iter: 5.3e-02
+Iter 23500, Loss: 2.753e-04, Data: 1.261e-04, Teacher: 1.489e-04, Entropy: 2.044e-06, lr: 6.6e-04, t/iter: 5.4e-02
+Iter 24000, Loss: 2.144e-04, Data: 9.392e-05, Teacher: 1.187e-04, Entropy: 1.724e-05, lr: 6.6e-04, t/iter: 5.4e-02
+Iter 24500, Loss: 4.409e-05, Data: 1.603e-05, Teacher: 2.788e-05, Entropy: 1.770e-06, lr: 6.6e-04, t/iter: 5.4e-02
+Iter 25000, Loss: 1.931e-05, Data: 2.089e-06, Teacher: 1.714e-05, Entropy: 8.054e-07, lr: 6.6e-04, t/iter: 5.4e-02
+Iter 25500, Loss: 1.391e-05, Data: 8.620e-07, Teacher: 1.298e-05, Entropy: 6.810e-07, lr: 5.9e-04, t/iter: 5.4e-02
+Iter 26000, Loss: 2.973e-05, Data: 9.154e-06, Teacher: 2.047e-05, Entropy: 1.075e-06, lr: 5.9e-04, t/iter: 5.4e-02
+Iter 26500, Loss: 9.765e-05, Data: 4.589e-05, Teacher: 5.148e-05, Entropy: 2.786e-06, lr: 5.9e-04, t/iter: 5.3e-02
+Iter 27000, Loss: 9.661e-05, Data: 4.207e-05, Teacher: 5.390e-05, Entropy: 6.419e-06, lr: 5.9e-04, t/iter: 5.4e-02
+Iter 27500, Loss: 3.561e-05, Data: 1.357e-05, Teacher: 2.185e-05, Entropy: 1.859e-06, lr: 5.9e-04, t/iter: 5.3e-02
+Iter 28000, Loss: 7.856e-05, Data: 3.497e-05, Teacher: 4.326e-05, Entropy: 3.360e-06, lr: 5.9e-04, t/iter: 5.3e-02
+Iter 28500, Loss: 1.232e-04, Data: 5.984e-05, Teacher: 6.258e-05, Entropy: 7.479e-06, lr: 5.9e-04, t/iter: 5.3e-02
+Iter 29000, Loss: 7.083e-05, Data: 3.481e-05, Teacher: 3.563e-05, Entropy: 3.926e-06, lr: 5.9e-04, t/iter: 5.3e-02
+Iter 29500, Loss: 1.083e-04, Data: 4.688e-05, Teacher: 6.102e-05, Entropy: 3.583e-06, lr: 5.9e-04, t/iter: 5.3e-02
+Iter 30000, Loss: 9.839e-05, Data: 4.762e-05, Teacher: 5.025e-05, Entropy: 5.229e-06, lr: 5.9e-04, t/iter: 5.4e-02
+Total time:  26.545 mins 
+

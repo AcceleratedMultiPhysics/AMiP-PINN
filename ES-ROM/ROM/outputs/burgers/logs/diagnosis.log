@@ -1,0 +1,45 @@
+coefficient std over training snapshots: [2.9e-15 1.9e+00 4.6e+00 1.1e+00 2.9e-01 9.7e-02 4.0e-02 1.7e-02 7.2e-03
+ 3.0e-03 1.3e-03 5.2e-04 2.1e-04 8.9e-05 3.7e-05 1.5e-05]
+rms of adot per coefficient            : [3.9e-15 1.2e+01 2.3e+01 1.3e+01 6.1e+00 2.9e+00 1.5e+00 7.7e-01 3.8e-01
+ 1.9e-01 8.9e-02 4.2e-02 2.0e-02 9.1e-03 4.2e-03 1.9e-03]
+
+structured: relative rms error of adot per coefficient on TRAINING data:
+    [1.0e+00 3.1e-03 3.2e-03 5.5e-03 1.0e-02 2.8e-02 3.7e-02 4.7e-02 1.0e-01
+ 3.4e-01 3.2e-01 7.0e-01 1.3e+00 4.8e+00 6.5e+00 3.2e+01]
+   rollout to t=0.05: max |normalized input| per saved time: [   3.7    4.1    9.7  135.   318.4  584.6  823.   987.9 1080.   796.5
+  838.7]
+   (training inputs have max |normalized input| = 3.7)
+
+unconstrained: relative rms error of adot per coefficient on TRAINING data:
+    [5.2e+12 1.7e-03 1.5e-03 2.6e-03 8.6e-03 2.5e-02 4.4e-02 4.6e-02 5.3e-02
+ 6.6e-02 1.8e-01 3.7e-01 2.4e-01 2.0e+00 5.6e+00 1.5e+01]
+   rollout to t=0.05: max |normalized input| per saved time: [  3.7   2.6   2.3   2.2   4.6   8.4  17.7  32.2  47.6 181.4 451.8]
+   (training inputs have max |normalized input| = 3.7)
+
+per-coefficient loss, best checkpoint (stopped at 15000): relative rms error of adot per mode
+    [0.76 0.33 0.03 0.01 0.02 0.04 0.04 0.04 0.04 0.04 0.04 0.04 0.07 0.19
+ 0.62]
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/atakan/.local/lib/python3.12/site-packages/torch/serialization.py", line 1601, in load
+    return _load(
+           ^^^^^^
+  File "/home/atakan/.local/lib/python3.12/site-packages/torch/serialization.py", line 2221, in _load
+    result = unpickler.load()
+             ^^^^^^^^^^^^^^^^
+  File "/home/atakan/.local/lib/python3.12/site-packages/torch/_weights_only_unpickler.py", line 541, in load
+    self.append(self.persistent_load(pid))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/atakan/.local/lib/python3.12/site-packages/torch/serialization.py", line 2185, in persistent_load
+    typed_storage = load_tensor(
+                    ^^^^^^^^^^^^
+  File "/home/atakan/.local/lib/python3.12/site-packages/torch/serialization.py", line 2128, in load_tensor
+    zip_file.get_storage_from_record(name, nbytes, torch.UntypedStorage)
+RuntimeError: PytorchStreamReader failed reading file data/9: file read failed. This is an internal miniz error. If you are seeing this error, there is a high likelihood that your checkpoint file is corrupted. This can happen if the checkpoint was not saved properly, was transferred incorrectly, or the file was modified after saving.
+
+[per-mode D, best checkpoint at ~10000 epochs]
+relative rms error of adot per mode (1..15): [7.35e-04 3.96e-04 6.67e-04 1.76e-03 4.19e-03 7.28e-03 1.15e-02 1.43e-02
+ 2.36e-02 4.83e-02 8.69e-02 1.82e-01 3.74e-01 9.31e-01 1.93e+00]
+rollout t: [0.   0.05 0.1  0.15 0.2  0.25 0.3 ]
+max |normalized input|: [3.7e+00 1.4e+03 3.8e+04 3.4e+04 6.0e+03 2.6e+04 1.5e+04] (training max 3.7)
+relative L2 error vs FOM: [1.15e-06 1.04e-01 1.44e-01 1.65e-01 1.59e-01 1.75e-01 1.90e-01]

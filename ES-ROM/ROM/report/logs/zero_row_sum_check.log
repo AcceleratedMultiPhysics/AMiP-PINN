@@ -1,0 +1,7 @@
+FOM: max |row sums of implicit Q| = 0.0
+FOM: max |rhs(uniform state)|      = 0.0
+reduced uniform state: max |a| on free coefficients = 7.185677666533047e-15
+v_N on free coefficients              = 1.7718475271566442e-15  (v_N on conserved: 13.863707781862317 )
+teacher ES-ROM: max |adot(uniform)|  = 4.2444476482767825e-14
+structured    net (random weights): max |adot(uniform)| = 8.23e-14   (typical |adot| on snapshots 4.10e+00)
+unconstrained net (random weights): max |adot(uniform)| = 1.42e+00   (typical |adot| on snapshots 9.96e-01)

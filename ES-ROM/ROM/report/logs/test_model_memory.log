@@ -1,0 +1,17 @@
+PASS  test_structured_random_weights_euler             0.49 s   
+PASS  test_structured_low_rank                         0.22 s   
+PASS  test_output_sizes                                0.44 s   
+PASS  test_precomputed_vN_matches                      0.44 s   
+PASS  test_batch_consistency                           0.44 s   
+PASS  test_rollout_entropy_nonincreasing_burgers       4.32 s   Fully discrete: S may only rise by RK time error, which is tiny at small dt.
+PASS  test_trainer_smoke                               2.56 s   A few epochs for both networks: finite losses, structure intact after updates.
+PASS  test_closure_entropy_and_conservation            0.51 s   Eddy-viscosity closure: nu >= 0, closure dS/dt <= 0, totals conserved (Euler).
+PASS  test_closure_reduces_to_esrom_and_keeps_uniform_states    0.45 s   
+PASS  test_closure_rollout_entropy_nonincreasing_burgers    4.22 s   
+PASS  test_closure_trainer_smoke                       0.10 s   A few epochs: finite losses, no teacher samples, nu >= 0 after updates.
+PASS  test_history_indices                             0.00 s   Past states A[k - j lag], initial state repeated before t = 0.
+PASS  test_memory_entropy_and_conservation             0.44 s   Any past states: nu >= 0, closure dS/dt <= 0, totals conserved (Euler).
+PASS  test_memory_rollout_entropy_nonincreasing_burgers    4.36 s   
+PASS  test_memory_trainer_smoke                        0.10 s   A few epochs: finite losses, past states taken from the FOM data.
+
+15/15 passed

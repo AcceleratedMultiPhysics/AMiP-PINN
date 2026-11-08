@@ -1,0 +1,10 @@
+PASS  test_entropy_vars_are_gradient_of_entropy        0.10 s   
+PASS  test_round_trip                                  0.00 s   
+PASS  test_flux_properties                             0.00 s   Consistency, symmetry and Tadmor's shuffle condition.
+PASS  test_flux_nearly_equal_states                    0.00 s   Shuffle condition where the log mean switches to its series branch.
+PASS  test_psi_is_potential                            0.00 s   psi = v^T f - F with F the entropy flux (checks the scaling of psi).
+PASS  test_logmean                                     0.00 s   
+PASS  test_logmean_gradient_is_finite                  0.00 s   The double-where keeps gradients finite at equal states (plan Sec. 7, NaN trap).
+PASS  test_euler_admissibility                         0.00 s   
+
+8/8 passed

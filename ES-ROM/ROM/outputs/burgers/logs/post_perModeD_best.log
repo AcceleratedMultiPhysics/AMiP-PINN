@@ -1,0 +1,6 @@
+no unconstrained weights at /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers/unconstrained/weights_best.pt, skipping
+ES-ROM (teacher)     err(T_train)=1.235e-06  err(end)=5.983e-06  t_end=1.500  2.941 ms/step
+POD-Galerkin         err(T_train)=1.235e-06  err(end)=5.983e-06  t_end=1.500  1.567 ms/step
+NN structured        err(T_train)=3.635e-01  err(end)=2.259e-01  t_end=1.500  3.689 ms/step
+structured: max |v^T J v|/(|v|^2 |J|) = 2.6e-18, min v^T R v = 1.9e-02
+figures and metrics.json written to /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers/post_best/

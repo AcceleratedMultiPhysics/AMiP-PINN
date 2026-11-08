@@ -1,0 +1,74 @@
+{
+  "problem": "burgers",
+  "K": 1000,
+  "eps": 0.002,
+  "r": 6,
+  "n": 6,
+  "T_train": 0.75,
+  "T_final": 1.5,
+  "projection_error": {
+    "T_train": 0.001804332844344479,
+    "T_final": 0.011009236936895489
+  },
+  "checks": {
+    "closure": {
+      "max_closure_dSdt": -0.00012052377785953958,
+      "min_nu": 3.2039767691215147e-34,
+      "max_nu_over_eps": 22.801010097824623,
+      "mean_nu_over_eps": 0.29937560322080203
+    },
+    "memory": {
+      "max_closure_dSdt": -0.00012053012092769025,
+      "min_nu": 1.0650625299147649e-41,
+      "max_nu_over_eps": 24.264379943708292,
+      "mean_nu_over_eps": 0.29188425487259917
+    },
+    "teacher_max_entropy_residual": 1.0130785099704553e-15
+  },
+  "roms": {
+    "ES-ROM (teacher)": {
+      "err_T_train": 0.006265518153952102,
+      "err_end": 0.07397780401019728,
+      "err_max": 0.07397780401019728,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.221332063261471e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.4377162456512451
+    },
+    "POD-Galerkin": {
+      "err_T_train": 0.0062655181539519635,
+      "err_end": 0.07397780401019735,
+      "err_max": 0.07397780401019735,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.1724822501779641e-16,
+      "all_admissible": true,
+      "ms_per_step": 1.1420761744181316
+    },
+    "NN closure": {
+      "err_T_train": 0.005470504181409492,
+      "err_end": 0.03309477673323,
+      "err_max": 0.03309477673323,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.2496427503894126e-16,
+      "all_admissible": true,
+      "ms_per_step": 3.894500494003296
+    },
+    "NN memory": {
+      "err_T_train": 0.005857371359813664,
+      "err_end": 0.03535268473999533,
+      "err_max": 0.03535268473999533,
+      "t_end": 1.5,
+      "blowup_time": null,
+      "max_entropy_increase": 0.0,
+      "max_totals_drift": 1.2762881029804164e-16,
+      "all_admissible": true,
+      "ms_per_step": 4.040458122889201
+    }
+  }
+}

@@ -1,0 +1,8 @@
+FOM: K=1000, dt=0.0005, 3000 steps, 601 snapshots, 1.8 s
+reproductive regime: basis and evaluation on t in [0, 1.50]
+  r  proj max  proj mean  ESROM max  ESROM mean  ESROM/proj (mean)
+  3  1.34e-01   2.94e-02   1.34e-01    8.02e-02                2.7
+  4  3.88e-02   1.10e-02   1.30e-01    6.58e-02                6.0
+  5  1.68e-02   6.23e-03   6.91e-02    2.97e-02                4.8
+  6  8.73e-03   1.94e-03   1.33e-02    9.18e-03                4.7
+  8  1.36e-03   3.67e-04   4.75e-03    2.25e-03                6.1

@@ -1,0 +1,7 @@
+no structured weights at /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4/structured/weights.pt, skipping
+no unconstrained weights at /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4/unconstrained/weights.pt, skipping
+ES-ROM (teacher)     err(T_train)=3.371e-02  err(end)=1.674e-01  t_end=1.500  1.423 ms/step
+POD-Galerkin         err(T_train)=3.371e-02  err(end)=1.674e-01  t_end=1.500  1.143 ms/step
+NN closure           err(T_train)=7.402e-03  err(end)=2.030e-01  t_end=1.500  3.989 ms/step
+closure: max closure dS/dt = -1.7e-16 (<= 0), nu/eps mean 0.96, max 105.12
+figures and metrics.json written to /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers_r4/post/

@@ -1,0 +1,18 @@
+----------------------------------------
+ES neural ROM  problem: burgers  model: structured  K: 1000  eps: 0.002  device: cpu
+----------------------------------------
+Basis: r=16 per variable, n=16, sigma_r/sigma_1=3.20e-07, ||V^T V - I||=4.4e-16
+Projection error: t=T_train 1.80e-07, t=T_final 3.78e-07
+Teacher: max |convective entropy residual| 8.0e-16, max dS/dt -2.0e-02 (should be <= 0)
+structured network: 259553 weights, n=16, data samples=301, teacher samples=2301
+Iter 1 (pretrain), Loss: 7.096e+07, Data: 7.184e+07, Teacher: 7.096e+07, Entropy: 1.000e+00, lr: 1.0e-03, t/iter: 0.0e+00
+Iter 500 (pretrain), Loss: 3.602e+03, Data: 6.196e+02, Teacher: 3.602e+03, Entropy: 9.966e-01, lr: 1.0e-03, t/iter: 4.0e-02
+Iter 1000 (pretrain), Loss: 1.704e+03, Data: 2.582e+02, Teacher: 1.704e+03, Entropy: 9.982e-01, lr: 1.0e-03, t/iter: 3.4e-02
+Iter 1500 (pretrain), Loss: 8.941e+02, Data: 1.243e+02, Teacher: 8.941e+02, Entropy: 9.980e-01, lr: 1.0e-03, t/iter: 3.2e-02
+Iter 2000 (pretrain), Loss: 7.010e+04, Data: 7.369e+04, Teacher: 7.010e+04, Entropy: 9.982e-01, lr: 1.0e-03, t/iter: 3.4e-02
+Iter 2500 (pretrain), Loss: 3.497e+02, Data: 5.286e+01, Teacher: 3.497e+02, Entropy: 9.984e-01, lr: 1.0e-03, t/iter: 4.4e-02
+Iter 3000 (pretrain), Loss: 2.663e+02, Data: 4.474e+01, Teacher: 2.663e+02, Entropy: 9.992e-01, lr: 1.0e-03, t/iter: 3.8e-02
+Iter 3500 (pretrain), Loss: 2.969e+02, Data: 1.529e+02, Teacher: 2.969e+02, Entropy: 9.991e-01, lr: 1.0e-03, t/iter: 3.6e-02
+Iter 4000 (pretrain), Loss: 1.283e+02, Data: 2.210e+01, Teacher: 1.283e+02, Entropy: 9.992e-01, lr: 1.0e-03, t/iter: 4.0e-02
+Iter 4500 (pretrain), Loss: 2.013e+04, Data: 2.051e+04, Teacher: 2.013e+04, Entropy: 9.993e-01, lr: 1.0e-03, t/iter: 3.5e-02
+Iter 5000 (pretrain), Loss: 5.417e+02, Data: 4.823e+02, Teacher: 5.417e+02, Entropy: 9.994e-01, lr: 1.0e-03, t/iter: 3.8e-02

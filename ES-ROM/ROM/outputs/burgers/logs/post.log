@@ -1,0 +1,6 @@
+ES-ROM (teacher)     err(T_train)=1.235e-06  err(end)=5.983e-06  t_end=1.500  2.363 ms/step
+POD-Galerkin         err(T_train)=1.235e-06  err(end)=5.983e-06  t_end=1.500  1.899 ms/step
+NN structured        err(T_train)=4.592e-01  err(end)=6.493e-01  t_end=1.500  4.553 ms/step
+NN unconstrained     err(T_train)=8.552e-01  err(end)=3.171e+00  t_end=1.500  1.804 ms/step
+structured: max |v^T J v|/(|v|^2 |J|) = 2.0e-17, min v^T R v = 3.0e-03
+figures and metrics.json written to /home/atakan/Documents/PhD/AMiP-PINN/ES-ROM/ROM/outputs/burgers/post/

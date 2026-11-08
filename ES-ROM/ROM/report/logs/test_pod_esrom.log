@@ -1,0 +1,10 @@
+PASS  test_basis_orthonormal_with_constant_mode        0.46 s   
+PASS  test_project_reconstruct                         0.74 s   
+PASS  test_totals_live_in_constant_coefficients        0.45 s   
+PASS  test_teacher_entropy_conservative_convection     0.46 s   |v_N^T V^T 2(Q o F)1| ~ round-off at every snapshot (Chan Fig. 4).
+PASS  test_teacher_entropy_stable_and_conservative     0.46 s   
+PASS  test_teacher_entropy_conservative_without_viscosity    0.45 s   
+PASS  test_burgers_entropy_projection_is_trivial       0.09 s   v = u for Burgers, so the ES-ROM equals POD-Galerkin.
+PASS  test_projected_data_is_consistent                0.45 s   
+
+8/8 passed

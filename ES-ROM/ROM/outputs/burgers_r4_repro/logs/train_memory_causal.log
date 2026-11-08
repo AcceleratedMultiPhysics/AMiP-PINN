@@ -1,0 +1,15 @@
+----------------------------------------
+ES neural ROM  problem: burgers  model: memory  training: causal  K: 1000  eps: 0.002  device: cpu
+----------------------------------------
+Basis: r=4 per variable, n=4, sigma_r/sigma_1=1.25e-02, ||V^T V - I||=8.9e-16
+Projection error: t=T_train 2.00e-02, t=T_final 2.00e-02
+Teacher: max |convective entropy residual| 2.3e-16, max dS/dt -2.1e-02 (should be <= 0)
+memory network: 204804 weights, n=4, data samples=601, teacher samples=0
+causal rollout: 600 snapshot intervals, dt=2.50e-03 (1 RK4 step(s) per interval), tol=100.0, w_cut=0.0001
+Iter 1, Loss: 1.697e-05, horizon t=0.390 (w_end 1.1e-04), mean L: 6.032e-04, err(horizon): 5.378e-02, lr: 1.0e-03, t/iter: 0.0e+00
+Iter 25, Loss: 1.697e-05, horizon t=0.403 (w_end 1.0e-04), mean L: 5.837e-04, err(horizon): 4.467e-02, lr: 1.0e-03, t/iter: 2.0e+00
+Iter 50, Loss: 1.697e-05, horizon t=0.403 (w_end 1.2e-04), mean L: 5.733e-04, err(horizon): 4.358e-02, lr: 1.0e-03, t/iter: 1.9e+00
+Iter 75, Loss: 1.697e-05, horizon t=0.403 (w_end 1.2e-04), mean L: 5.725e-04, err(horizon): 4.349e-02, lr: 1.0e-03, t/iter: 2.0e+00
+Iter 100, Loss: 1.697e-05, horizon t=0.403 (w_end 1.2e-04), mean L: 5.723e-04, err(horizon): 4.346e-02, lr: 1.0e-03, t/iter: 1.6e+00
+Iter 125, Loss: 1.697e-05, horizon t=0.403 (w_end 1.2e-04), mean L: 5.721e-04, err(horizon): 4.345e-02, lr: 1.0e-03, t/iter: 1.9e+00
+Iter 150, Loss: 1.697e-05, horizon t=0.405 (w_end 1.0e-04), mean L: 5.796e-04, err(horizon): 4.239e-02, lr: 1.0e-03, t/iter: 1.8e+00

@@ -1,0 +1,78 @@
+{
+  "physics/burgers": {
+    "grad_entropy_minus_v": 0.0,
+    "round_trip": 0.0,
+    "consistency": 8.881784197001252e-16,
+    "symmetry": 4.440892098500626e-16,
+    "shuffle": 1.7763568394002505e-15,
+    "psi": 1.7763568394002505e-15
+  },
+  "physics/euler": {
+    "grad_entropy_minus_v": 8.881784197001252e-16,
+    "round_trip": 1.7763568394002505e-14,
+    "consistency": 7.105427357601002e-15,
+    "symmetry": 7.105427357601002e-15,
+    "shuffle": 3.9968028886505635e-15,
+    "psi": 3.9968028886505635e-15,
+    "shuffle_nearly_equal": 3.962147228791007e-15
+  },
+  "physics/logmean_rel_err": 4.382294317710775e-16,
+  "fom/euler_K200": {
+    "sum_rhs": 1.3988810110276972e-14,
+    "entropy_residual": -5.919743861770854e-17,
+    "entropy_residual_scale": 3.5673541494776635,
+    "dissipation": 0.0008434865158935883,
+    "rate_plus_dissipation": 4.4885969940899884e-17,
+    "vs_FOM_esrom_rhs": 1.9539925233402755e-14
+  },
+  "fom/entropy_drift_eps0_T0.2": {
+    "50": 1.2271140479048888e-09,
+    "100": 5.976335996613349e-11,
+    "200": 3.2012857810721705e-12,
+    "400": 1.8865627296274838e-13
+  },
+  "pod_teacher/euler_K100_r6": {
+    "VtV_minus_I": 4.440892098500626e-16,
+    "nonconstant_column_sums": 5.551115123125783e-16,
+    "teacher_entropy_residual_rel": 7.482047965994603e-15,
+    "teacher_max_dSdt": -0.0001855774404864717,
+    "teacher_min_dissipation": 0.0001855774404864717,
+    "teacher_conserved_rates": 3.469919541938932e-15,
+    "teacher_eps0_max_abs_dSdt": 3.530509218307998e-16,
+    "projection_error_train_end": 0.011717209564802485,
+    "projection_error_final": 0.05156007247140266
+  },
+  "pod_teacher/burgers_teacher_minus_galerkin": 1.7763568394002505e-14,
+  "model/random_full_L": {
+    "states": 64,
+    "max_rel_vJv": 2.698146563434951e-17,
+    "min_eig_R_rel": -1.6438488020686009e-18,
+    "max_dSdt": -0.0008898370679222574,
+    "min_vRv": 0.0008898370679222575,
+    "rate_plus_vRv_rel": 7.310531351555526e-16,
+    "conserved_rates": 0.0
+  },
+  "model/random_rank3_L": {
+    "states": 64,
+    "max_rel_vJv": 2.607908624175176e-17,
+    "min_eig_R_rel": -3.578391789917282e-16,
+    "max_dSdt": -0.00020799150842023385,
+    "min_vRv": 0.00020799150842023352,
+    "rate_plus_vRv_rel": 3.7779413815856067e-16,
+    "conserved_rates": 0.0
+  },
+  "model/random_rollout_burgers": {
+    "structured": {
+      "max_step_increase": -1.2560530270322445e-05,
+      "S0": 0.49999999818380986,
+      "S_end": 0.46825557785214467,
+      "totals_drift": 5.689893001203928e-17
+    },
+    "unconstrained": {
+      "max_step_increase": 0.00024203056722293947,
+      "S0": 0.49999999818380986,
+      "S_end": 0.5320652386969951,
+      "totals_drift": 0.0674970278889183
+    }
+  }
+}
